@@ -1,8 +1,7 @@
-
 {
   "name": "line-webhook-onedollar",
   "version": "1.0.0",
-  "description": "LINE Webhook with auto-reply for Onedollar",
+  "description": "LINE bot for Onedollar Auto Reply",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
