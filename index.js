@@ -21,7 +21,7 @@ function handleEvent(event) {
 
   const userId = event.source.userId;
   const now = new Date();
-const hour = (now.getUTCHours() + 7) % 24; // ปรับเป็นเวลาไทย
+const hour = (now.getUTCHours() + 7) % 24;
 const isNight = hour >= 21 || hour < 7;
 
 
