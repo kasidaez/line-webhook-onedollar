@@ -21,8 +21,9 @@ function handleEvent(event) {
 
   const userId = event.source.userId;
   const now = new Date();
-  const hour = now.getHours();
-  const isNight = hour >= 21 || hour < 7;
+const hour = (now.getUTCHours() + 7) % 24; // ปรับเป็นเวลาไทย
+const isNight = hour >= 21 || hour < 7;
+
 
   // ตรวจจับสลิป (ภาพ)
   if (event.message.type === 'image') {
